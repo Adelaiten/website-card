@@ -6,6 +6,7 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,800" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet"> 
     <link href="css/main.css" rel = "stylesheet" type = "text/css">
+    <link rel="stylesheet" href="fontello/css/fontello.css">
     <meta name = "viewport" content = "width=device-width">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
@@ -39,9 +40,9 @@
             </div>
             <div class="overlay"></div>
         </div>
-
+        
         <div class="about-me"> 
-            <span id="about-span">About me</span>
+            <span class="about-span">About me</span>
             <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 Mauris aliquet ullamcorper quam, tincidunt fringilla metus porta non.
@@ -61,33 +62,49 @@
                 Maecenas non accumsan massa, eu porttitor magna.
             </p>
         </div>
-
         <div class="skills"> 
-            <ul>
-                <li>Java</li>
-                <li>Python</li>
-                <li>PostgreSQL</li>
-                <li>HTML5</li>
-            </ul>
-
-            <ul>
-                <li>CSS3</li>
-                <li>JavaScript</li>
-                <li>JQuery</li>
-                <li>Git</li>
-            </ul>
+            <span class="my-skills">My skills</span>
+            <li>
+                <h3>Java 8</h3><span class="bar"><span class="java"></span></span>
+            </li>
+            <li>
+                <h3>Python 3</h3><span class="bar"><span class="python"></span></span>
+            </li>
+            <li>
+                <h3>PostgreSQL</h3><span class="bar"><span class="sql"></span></span>
+            </li>
+            <li>
+                <h3>XML</h3><span class="bar"><span class="xml"></span></span>
+            </li>
+            <li>
+                <h3>Intellij</h3><span class="bar"><span class="intellij"></span></span>
+            </li>
+            <li>
+                <h3>SOLID</h3><span class="bar"><span class="solid"></span></span>
+            </li>
+            <li>
+                <h3>SCRUM</h3><span class="bar"><span class="scrum"></span></span>
+            </li>
+            <li>
+                <h3>English</h3><span class="bar"><span class="english"></span></span>
+            </li>
         </div>
 
         <div class="contact"> 
+            <span class="author-contact">Contact:</span>
             <p>Karol Trzaska</p>
             <p>Numer telefonu: 732828336</p>
             <p>Email: karolantonitrzaska@gmail.com</p>
         </div>
     </main>
 
-    <footer>
-        <p>&copy; Karol Trzaska</p>
+    <footer class="footer">
+        <p>&copy; 2018 Karol Trzaska</p>
+        <i class="icon-git-squared"></i>
+        <i class="icon-facebook-squared"></i>
+        <i class="icon-linkedin-squared"></i>
     </footer>
+
     <script src="js/index.js"></script>
 </body>
 </html>

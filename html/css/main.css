@@ -8,6 +8,7 @@ body{
     color: #FFF;
     display: flex;
     flex-direction: column;
+    
 }
 
 .header {
@@ -24,7 +25,7 @@ body{
 }
 
 .header .name {
-    color: black;
+    color: #fff;
     width: 500px;
     font-size: 1.5rem;
     font-weight: 500;
@@ -47,11 +48,12 @@ body{
     list-style: none;
 }
 .main-nav .hamburger {
+    margin-right: 0;
     margin-left: auto;
     border: 0;
     background: 0;
     padding-right: 20px;
-    fill: rgb(0,0,0);
+    fill: #fff;
 }
 .main-nav .hamburger .hamburger-icon {
     width: 30px;
@@ -94,21 +96,26 @@ body{
 .author-description {
     position: absolute;
     margin-top: 20px;
-    top: 65%;
-    left: 60%;
+
     text-transform: uppercase;
-    transform: translate(-55%, -65%);
+    transform: translate(8%, 150%);
     z-index: 1;
+    width: 89%;
+}
+
+.author-description:hover{
+    cursor: pointer;
 }
 
 .author-photo {
     width: 100px;
     height: 100px;
+
     border-radius: 50%;
     border: 3px solid #fff;
     z-index: 1;
 }
-.author-name, .author-proffesion {
+.author-name {
     
     width: 100%;
     font-size: 1.2rem;
@@ -135,21 +142,22 @@ body{
 
 @keyframes text {
     0%{
-        margin-bottom: -60px;
+        margin-bottom: 60px;
     }
 
 }
 .author-proffesion {
-    transform: translateX(15%);
     color: #67ca3d;
+    transform: translateX(27%);
+    font-size: 1.2rem;
+    z-index: 1;
+    width: 80%;
 
 }
-.contact {
-    font-size: 1rem;  
-}
-
 .about-me {
     position: relative;
+}
+.about-me, .skills, .contact {
     padding-top: 20px;
     padding-left: 10px;
     padding-right: 10px;
@@ -157,21 +165,98 @@ body{
     font-size: 1rem;
     margin-left: 4px;
     margin-right: 4px;
-    height: 600px;
+    box-sizing: border-box;
 }
 
-#about-span{
+.about-span, .my-skills, .author-contact{
+    box-sizing: border-box;
     font-size: 2rem;
     padding-bottom: 20px;
 }
 
-#about-span::after {
+.about-span::after, .my-skills::after, .author-contact::after {
     content: "";
     padding-top: 10px;
+    margin-left: 2px;
     width: 100px;
     border-bottom: 8px solid #67ca3d;
     display: block;
 }
 
+.skills {
+    margin: 0;
+    width: 100%;
+    list-style: none;
+}
 
+.skills li {
+    padding: 5px;
+    width: 80%;
+}
 
+.skills .bar {
+    background: #354836;
+    display: block;
+    height: 2px;
+    border: 1px solid rgba(0,0,0,0.3);
+    border-radius: 3px;
+    overflow: hidden;
+    box-shadow: 0 0 10px #21e73bb3;
+}
+.bar span {
+    height: 2px;
+    background: #67ca3d;
+    float: left;
+}
+
+.java {
+    width: 80%;
+}
+
+.python {
+    width: 40%;
+}
+
+.sql {
+    width: 55%;
+}
+
+.xml {
+    width: 35%;
+}
+
+.intellij {
+    width: 70%;
+}
+
+.solid {
+    width: 60%;
+}
+.scrum {
+    width: 50%;
+}
+
+.english{
+    width:85%;
+}
+
+.footer{
+    padding-top: 50px;
+    color: rgb(0,0,0);
+    margin: auto;
+    padding-bottom: 20px;
+}
+.footer p {
+    font-size: 1.5rem;
+    text-align: center;
+}
+.footer .icon-git-squared, .icon-facebook-squared, .icon-linkedin-squared {
+    
+    font-size: 60px;
+    color: #67ca3d;
+    
+}
+.footer .icon-git-squared:hover, .icon-facebook-squared:hover, .icon-linkedin-squared:hover {
+    color: #489428;
+    cursor: pointer;
+}
