@@ -18,19 +18,23 @@ body{
     width: 100%;
     max-width: 100%;
     background-color: #67ca3d;
-    height: 55px;
+    height: 70vh;
     z-index: 2;
     margin: 0;
     padding: 0;
+    top: -60vh;
 }
 
 .header .name {
     color: #fff;
-    width: 500px;
+    width: 480px;
     font-size: 1.5rem;
     font-weight: 500;
     padding-left: 50px;
     padding-top: 10px;
+    padding-bottom: 10px;
+    position: absolute;
+    bottom: 0;
 }
 .header .main-nav { 
     width: 100%;
@@ -39,21 +43,40 @@ body{
     justify-content: flex-end;
 
 }
+
 .main-nav .navigation-menu {
-    display: none;
+    display: block;
+    text-align: center;
+    transform: translate(-78%, 5%);
+    padding: 0;
 }
 .main-nav .navigation-menu li{
-
-    text-decoration: none;
     list-style: none;
+    margin-bottom: 35px;
+    border-bottom: 1px solid #fff;
 }
-.main-nav .hamburger {
+.main-nav .navigation-menu li a{
+    line-height: 30px;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+.name .hamburger {
+    position: absolute;
+    
     margin-right: 0;
     margin-left: auto;
     border: 0;
     background: 0;
-    padding-right: 20px;
+    padding-right: 15px;
     fill: #fff;
+    bottom: 8px;
+    left: 48%;
+
+    margin-bottom: 6px;
+    
 }
 .main-nav .hamburger .hamburger-icon {
     width: 30px;
@@ -259,4 +282,37 @@ body{
 .footer .icon-git-squared:hover, .icon-facebook-squared:hover, .icon-linkedin-squared:hover {
     color: #489428;
     cursor: pointer;
+}
+
+
+@media(min-width: 1025px){
+    .header{
+        display: flex;
+        flex-direction: row;
+        position: fixed;
+        background-color: #67ca3d;
+        width: 100%;
+        height: 10vh;
+        top: 0;
+    
+    }
+
+    .main-nav .navigation-menu li{
+        border-bottom: 0;
+        display: inline-block;
+        margin-right: 40px;
+        padding: 8px;
+        
+
+    }
+
+    .name {
+        display: none;
+    }
+
+   .author-photo {
+       width:200px;
+       height: 200px;
+       transform: translate(50%,20%);
+   }
 }

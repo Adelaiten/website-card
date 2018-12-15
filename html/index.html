@@ -9,30 +9,37 @@
     <link rel="stylesheet" href="fontello/css/fontello.css">
     <meta name = "viewport" content = "width=device-width">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    
+
+    <script>
+
+            </script>
 </head>
 <body>
-    <header class="header">
-        <span class="name">Karol Trzaska</span>
-        <nav class="main-nav">
-            <ul class="navigation-menu">
-                <li><a href="#">Start</a></li>
-                <li><a href="#">About me</a></li>
-                <li><a href="#">Skills</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-            <button class="hamburger" title="Open menu" aria-label="navigation menu">
+    <header class="header" id="header">
+            <nav id="main-nav" class="main-nav">
+                    <ul class="navigation-menu">
+                        <li><a id="start" href="#header">Start</a></li>
+                        <li><a id="about" href="#about-me">About me</a></li>
+                        <li><a id="skills" href="#skills">Skills</a></li>
+                        <li><a id="contact" href="#contact">Contact</a></li>
+                    </ul>
+
+                </nav>
+        <span class="name">Karol Trzaska<button class="hamburger" title="Open menu" aria-label="navigation menu">
                 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid" width="35" height="12" viewBox="0 0 35 12" class="hamburger-icon">
                     <path d="M-0.000,12.000 L-0.000,8.000 L35.000,8.000 L35.000,12.000 L-0.000,12.000 ZM-0.000,0.000 L35.000,0.000 L35.000,4.000 L-0.000,4.000 L-0.000,0.000 Z"/>
                 </svg>
                 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid" width="28.312" height="27.594" viewBox="0 0 28.312 27.594" class="close-icon">
                     <path d="M28.298,2.831 L16.984,14.145 L27.591,24.751 L24.763,27.580 L14.156,16.973 L3.549,27.580 L0.721,24.751 L11.328,14.145 L0.014,2.831 L2.842,0.003 L14.156,11.316 L25.470,0.003 L28.298,2.831 Z"/>
                 </svg>
-            </button>
-        </nav>
+            </button></span>
+
     </header>
 
     <main>
-        <div class="author">
+        <div class="author" >
             <img src="img/zdjeciecc.jpg" class="author-photo">
             <div class="author-description">
                 <p class="author-name">Karol Trzaska</p>
@@ -41,7 +48,7 @@
             <div class="overlay"></div>
         </div>
         
-        <div class="about-me"> 
+        <div class="about-me" id="about-me"> 
             <span class="about-span">About me</span>
             <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -62,7 +69,7 @@
                 Maecenas non accumsan massa, eu porttitor magna.
             </p>
         </div>
-        <div class="skills"> 
+        <div class="skills" id="skills"> 
             <span class="my-skills">My skills</span>
             <li>
                 <h3>Java 8</h3><span class="bar"><span class="java"></span></span>
@@ -90,7 +97,7 @@
             </li>
         </div>
 
-        <div class="contact"> 
+        <div class="contact" id="contact"> 
             <span class="author-contact">Contact:</span>
             <p>Karol Trzaska</p>
             <p>Numer telefonu: 732828336</p>
@@ -100,9 +107,9 @@
 
     <footer class="footer">
         <p>&copy; 2018 Karol Trzaska</p>
-        <i class="icon-git-squared"></i>
-        <i class="icon-facebook-squared"></i>
-        <i class="icon-linkedin-squared"></i>
+        <a href="https://github.com/Adelaiten"><i class="icon-git-squared"></i></a>
+        <a href="https://www.facebook.com/Karol.Trzaska1"><i class="icon-facebook-squared"></i></a>
+        <a href="https://www.linkedin.com/in/karol-trzaska-7468a1171/"><i class="icon-linkedin-squared"></i></a>
     </footer>
 
     <script src="js/index.js"></script>
