@@ -3,17 +3,18 @@
     
 
 $(document).ready(function(){
+    var authorAbout = ["Java Developer", "Law Student", "Rollers Lover"];
+    var counter = 1;
+    $(".author-description").click(function(){
+        if(counter>2){
+            counter = 0;
+        }
+        $(".author-proffesion").fadeOut(1000).remove();
+        $(this).append('<p class="author-proffesion">' + authorAbout[counter] + '</p>').hide().delay(500).fadeIn(1000);
+        counter++;
+    });
     if($(window).width() < 960){
-        var authorAbout = ["Java Developer", "Law Student", "Rollers Lover"];
-        var counter = 1;
-        $(".author-description").click(function(){
-            if(counter>2){
-                counter = 0;
-            }
-            $(".author-proffesion").fadeOut(1000).remove();
-            $(this).append('<p class="author-proffesion">' + authorAbout[counter] + '</p>').hide().delay(500).fadeIn(1000);
-            counter++;
-        });
+
 
 
         var click = 0;
@@ -43,11 +44,13 @@ $(document).ready(function(){
         ); 
 }
 if($(window).width() > 1024){
-    // $(".main-nav .navigation-menu li").hide();
-    // $(window).scroll(function(){
-    //     if($(this).scrollTop() > 200){
-    //         $(".main-nav .navigation-menu li").fadeIn(500);
-    //     }
-    // });
+    $(".header").hide();
+    $(window).scroll(function(){
+        if($(this).scrollTop() > 400){
+            $(".header").fadeIn(500);
+        }else if($(this).scrollTop() < 200){
+            $(".header").fadeOut(500);
+        }
+    });
 }
 });

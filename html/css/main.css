@@ -109,19 +109,13 @@ body{
     position:absolute;
 
 }
-.author img {
-    position: absolute;
-    right: 30%;
-    left: 35%;
-    top: 150px;
-}
 
 .author-description {
     position: absolute;
     margin-top: 20px;
 
     text-transform: uppercase;
-    transform: translate(8%, 150%);
+    transform: translate(8%, 100%);
     z-index: 1;
     width: 89%;
 }
@@ -130,14 +124,7 @@ body{
     cursor: pointer;
 }
 
-.author-photo {
-    width: 100px;
-    height: 100px;
 
-    border-radius: 50%;
-    border: 3px solid #fff;
-    z-index: 1;
-}
 .author-name {
     
     width: 100%;
@@ -296,23 +283,62 @@ body{
         top: 0;
     
     }
-
+    .main-nav {
+        margin-left: auto;
+    }
     .main-nav .navigation-menu li{
         border-bottom: 0;
         display: inline-block;
-        margin-right: 40px;
+        margin-right: 35px;
         padding: 8px;
-        
-
+    
     }
-
+    .main-nav .navigation-menu li:last-child {
+        margin-right: 0;
+    }
     .name {
         display: none;
     }
+    .author-description {
+        font-family: "Montserrat", sans-serif;
+        transform: translate(34%,26%);
+        width: 800px;
+    }
+    .author-name {
+        font-family: "Montserrat", sans-serif;
+        text-shadow: 5px 5px 5px rgba(0,0,0,0.56);
+        width: 800px;
+        font-size: 5rem;
+    }  
+    .author-name::after {
+        content: "";
+        display: inline-block;
+        width: 780px;
+        border-bottom: 1px solid #fff;
+    }
+    .author-proffesion {
+        font-family: "Montserrat", sans-serif;
+        text-shadow: 5px 5px 5px rgba(0,0,0,0.56);
+        font-size: 3rem;
+    }
 
-   .author-photo {
-       width:200px;
-       height: 200px;
-       transform: translate(50%,20%);
-   }
+    .about-me-column {
+        display: flex;
+        flex-direction: row;
+    }
+    .column-paragraphs {
+        display: flex;
+        flex-direction: column;
+    }
+    .about-me-column p {
+        width: 500px;
+    }
+    .about-me-column .hackathon-first-image {
+        height: 500px;
+    }
+    .about-me-column .hackathon-second-image {
+        height: 500px;
+        width: 400px;
+        padding-left: 50px;
+    }
 }
