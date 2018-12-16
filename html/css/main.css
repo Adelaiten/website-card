@@ -25,6 +25,9 @@ body{
     top: -60vh;
 }
 
+.header-author-name {
+    display: none;
+}
 .header .name {
     color: #fff;
     width: 480px;
@@ -283,14 +286,28 @@ body{
         top: 0;
     
     }
+    .header-author-name {
+        box-sizing: border-box;
+        display: inline;
+        font-family: "Montserrat", sans-serif;
+        width: 600px;
+        font-size: 2rem;
+        text-shadow: 5px 5px 5px rgba(0,0,0,0.56);
+        text-transform: uppercase;
+        padding-top: 12px;
+        padding-left: 20px;
+    }
     .main-nav {
+        display: none;
         margin-left: auto;
     }
     .main-nav .navigation-menu li{
+        
         border-bottom: 0;
         display: inline-block;
         margin-right: 35px;
         padding: 8px;
+        display: none;
     
     }
     .main-nav .navigation-menu li:last-child {
@@ -322,6 +339,13 @@ body{
         font-size: 3rem;
     }
 
+    .about-span {
+        text-shadow: 2px 2px 2px rgba(0,0,0,0.56);
+    }
+
+    .skills {
+        text-shadow: 2px 2px 2px rgba(0,0,0,0.56);
+    }
     .about-me-column {
         display: flex;
         flex-direction: row;
@@ -336,9 +360,89 @@ body{
     .about-me-column .hackathon-first-image {
         height: 500px;
     }
+
     .about-me-column .hackathon-second-image {
         height: 500px;
         width: 400px;
         padding-left: 50px;
+    }
+
+    .short-info {
+        box-sizing: border-box;
+        text-align: center;
+        width: 100%;
+        height: 35vh;
+        padding: 0;
+        margin-top: 35vh;
+        margin-bottom: 5vh;
+    }
+    .short-info-title {
+        font-size: 2.5rem;
+        text-transform: uppercase;
+        color: #337c08;
+        text-shadow: 1px 1px 1px rgba(0,0,0, 0.56);
+    }
+
+    .short-info-interior {
+        margin-top: 20px;
+        text-align: justify;
+        line-height: 1.5;
+        width: 300px;
+        word-wrap: break-word;
+        font-size: 1rem;
+        font-family: "Lato", sans-serif;
+    }
+    .short-info-interior p {
+        margin: auto;
+        width: 70%;
+        color: rgb(0,0,0);
+        
+    }
+    .skills{
+        margin-top: 20vh;
+    }
+    .bars {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+
+    .bars > li {
+        display: flex;
+        flex-basis: calc(50% - 30px);
+        justify-content: center;
+        flex-direction: column;
+    }
+    .bars > li:nth-child(2n){
+        padding-left: 30px;
+    }
+
+    .footer {
+        margin-top: 25vh;
+        background-color:#369110;
+        height: 60vh;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+
+    .footer > div {
+        display: flex; 
+        flex-basis: calc(50% - 14px);  
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .icons {
+        display: flex;
+        flex-direction: row;
+
+    }
+    .contact {
+        padding-left: 100px;
+    }
+    .contact p {
+        text-align: left;
     }
 }
